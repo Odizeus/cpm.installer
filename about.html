@@ -1,63 +1,156 @@
 <!DOCTYPE html>
-
-<html>
-
+<html lang="en">
 <head>
-
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta http-equiv="X-UA-Compatible" content="ie=edge">
-<title>About</title>
-
-
-<!-----styles------>
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<link rel="stylesheet" type="text/css" href="./assets/css/style1.css"/>
-
-
-<!--special fonts---->
-<link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
-
-
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Learn about CPM Installer Services, a family-owned flooring and interior renewal company serving South Florida.">
+  <title>About | CPM Installer Services</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="./assets/css/style1.css">
 </head>
+<body>
+  <div class="page-shell">
+    <header class="site-header">
+      <div class="container header-inner">
+        <a class="brand" href="./index.html" aria-label="CPM Installer Services home">
+          <span class="brand-main">CPM</span>
+          <span class="brand-sub">Installer Services</span>
+        </a>
+        <nav class="main-nav" id="siteNav" aria-label="Primary navigation">
+          <a href="./index.html">Home</a>
+          <a href="./flooring.html">Floor Installation</a>
+          <a href="./interior-renewal.html">Interior Renewal</a>
+          <a href="./gallery.html">Gallery</a>
+          <a href="./about.html">About</a>
+          <a class="btn btn-primary mobile-quote" href="./contact.html">Request a Quote</a>
+        </nav>
+        <div class="header-actions">
+          <span class="language-pill" aria-label="Language options">EN / ES</span>
+          <a class="btn btn-primary" href="./contact.html">Request a Quote</a>
+        </div>
+        <button class="nav-toggle" id="navToggle" type="button" aria-label="Toggle navigation" aria-expanded="false" aria-controls="siteNav">
+          <span class="nav-toggle-lines" aria-hidden="true"><span></span><span></span><span></span></span>
+        </button>
+      </div>
+    </header>
 
-<!--navigation bar---->
+    <main>
+      <section class="page-hero" style="--page-hero-image: url('./assets/img/interior(18).jpg');">
+        <div class="container">
+          <span class="eyebrow">About Us</span>
+          <h1>Family-owned. Craft-focused. South Florida proud.</h1>
+          <p>CPM Installer Services is a fully licensed and insured company located in Miami, serving all of South Florida with flooring installation and interior renewal.</p>
+        </div>
+      </section>
 
- <body class="imagen-fondo" style="background-image: url('./assets/img/fondo.jpg')"">
- 
+      <section class="section" aria-labelledby="about-story-heading">
+        <div class="container split">
+          <div class="split-copy">
+            <span class="eyebrow">Our Story</span>
+            <h2 id="about-story-heading">A reputation built one finished room at a time.</h2>
+            <p>Established in October 2017 in the State of Florida, CPM Installer Services began as a family-owned business committed to straightforward communication and dependable craftsmanship.</p>
+            <p>For years, we have continued growing by maintaining high standards, completing projects on time and within budget, and treating every client space with care from project inception through completion.</p>
+          </div>
+          <div class="story-image">
+            <img src="./assets/img/interior(20).jpg" alt="Completed interior renewal project by CPM Installer Services">
+            <div class="story-badge">
+              <strong>8+</strong>
+              <span>Years Serving</span>
+            </div>
+          </div>
+        </div>
+      </section>
 
+      <section class="section section-alt" aria-labelledby="values-heading">
+        <div class="container">
+          <div class="section-heading">
+            <span class="eyebrow">What We Stand For</span>
+            <h2 id="values-heading">The values behind the finish.</h2>
+          </div>
+          <div class="detail-grid">
+            <article class="value-card">
+              <h3>Integrity</h3>
+              <p>Clear expectations, practical recommendations, and respect for the budget from the start.</p>
+            </article>
+            <article class="value-card">
+              <h3>Craftsmanship</h3>
+              <p>Careful preparation, patient installation, and finish details that hold up over time.</p>
+            </article>
+            <article class="value-card">
+              <h3>Reliability</h3>
+              <p>Work planned with care, communicated clearly, and completed with a clean final walkthrough.</p>
+            </article>
+          </div>
+        </div>
+      </section>
 
+      <section class="section" aria-labelledby="promise-heading">
+        <div class="container">
+          <div class="testimonial-card" style="max-width: 860px;">
+            <span class="eyebrow">Our Promise</span>
+            <h2 id="promise-heading" style="font-family: 'Cormorant Garamond', Georgia, serif; font-size: clamp(42px, 6vw, 70px); line-height: 1;">Do the work right, and let the finish speak.</h2>
+            <blockquote>Every floor, wall, trim line, and final detail carries our name. That is why we move carefully, communicate honestly, and leave the space ready for real life.</blockquote>
+            <footer>
+              <strong>CPM Installer Services</strong>
+              <span>Family-owned since 2017</span>
+            </footer>
+          </div>
+        </div>
+      </section>
 
+      <section class="cta-band" style="background-image: url('./assets/img/fondo-madera.jpg');" aria-labelledby="about-cta-heading">
+        <div class="container">
+          <h2 id="about-cta-heading">Ready to talk through your project?</h2>
+          <p>Share your goals and we will help you understand the best next step.</p>
+          <div class="hero-actions" style="justify-content: center;">
+            <a class="btn btn-primary" href="./contact.html">Request a Quote <span aria-hidden="true">&rarr;</span></a>
+          </div>
+        </div>
+      </section>
+    </main>
 
-<ul class="sidenav">
-  <li><a href="./index.html">HOME</a></li>
-  <li><a href="./flooring.html">FLOOR INSTALLATION</a></li>
-  <li><a href="./interior-renewal.html">INTERIOR RENEWAL</a></li>
-  <li><a href="./contact.html">CONTACT US</a></li>
-  <li class="push"><a href="./about.html">ABOUT US</a></li>
-</ul>  
+    <footer class="site-footer">
+      <div class="container footer-main">
+        <div>
+          <a class="brand" href="./index.html" aria-label="CPM Installer Services home">
+            <span class="brand-main">CPM</span>
+            <span class="brand-sub">Installer Services</span>
+          </a>
+          <p>Premium flooring and interior renewal for South Florida homes and businesses.</p>
+        </div>
+        <div>
+          <h3>Explore</h3>
+          <ul class="footer-links">
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./gallery.html">Gallery</a></li>
+            <li><a href="./about.html">About</a></li>
+            <li><a href="./contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3>Services</h3>
+          <ul class="footer-links">
+            <li><a href="./flooring.html">Floor Installation</a></li>
+            <li><a href="./interior-renewal.html">Interior Renewal</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3>Contact</h3>
+          <ul class="footer-contact">
+            <li>Miami, Florida</li>
+            <li>Serving South Florida</li>
+            <li><a href="./contact.html">Request a free quote</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="container footer-bottom">
+        <span>&copy; 2026 CPM Installer Services. All rights reserved.</span>
+        <span>Fully licensed &amp; insured</span>
+      </div>
+    </footer>
+  </div>
 
-
-
-
-
-
-
-
-
-
-
-
-
-<div class="content">
-  <h1>About us</h1>
-
-<p>&nbsp CPM Installer Services is a fully licensed and insured company located in Miami, serving all of Sout Florida.<br>
-
-We pride ourselves in completing our projects on time and within budget.
-
-</div>
-
+  <script src="./assets/js/js2.js"></script>
 </body>
-
 </html>

@@ -1,62 +1,163 @@
 <!DOCTYPE html>
-
-<html>
-
-
-
-
-
+<html lang="en">
 <head>
-
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta http-equiv="X-UA-Compatible" content="ie=edge">
-<title>Contact</title>
-
-
-<!-----styles------>
-<link rel="stylesheet" type="text/css" href="./assets/css/style2.css"/>
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<link rel="stylesheet" type="text/css" href="./assets/css/style1.css"/>
-
-
-
-<!--special fonts---->
-<link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
-
-
-
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Request a free flooring or interior renewal quote from CPM Installer Services.">
+  <title>Contact | CPM Installer Services</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="./assets/css/style1.css">
 </head>
+<body>
+  <div class="page-shell">
+    <header class="site-header">
+      <div class="container header-inner">
+        <a class="brand" href="./index.html" aria-label="CPM Installer Services home">
+          <span class="brand-main">CPM</span>
+          <span class="brand-sub">Installer Services</span>
+        </a>
+        <nav class="main-nav" id="siteNav" aria-label="Primary navigation">
+          <a href="./index.html">Home</a>
+          <a href="./flooring.html">Floor Installation</a>
+          <a href="./interior-renewal.html">Interior Renewal</a>
+          <a href="./gallery.html">Gallery</a>
+          <a href="./about.html">About</a>
+          <a class="btn btn-primary mobile-quote" href="./contact.html">Request a Quote</a>
+        </nav>
+        <div class="header-actions">
+          <span class="language-pill" aria-label="Language options">EN / ES</span>
+          <a class="btn btn-primary" href="./contact.html">Request a Quote</a>
+        </div>
+        <button class="nav-toggle" id="navToggle" type="button" aria-label="Toggle navigation" aria-expanded="false" aria-controls="siteNav">
+          <span class="nav-toggle-lines" aria-hidden="true"><span></span><span></span><span></span></span>
+        </button>
+      </div>
+    </header>
 
-<!--navigation bar---->
+    <main>
+      <section class="page-hero" style="--page-hero-image: url('./assets/img/fondo-madera.jpg');">
+        <div class="container">
+          <span class="eyebrow">Get in Touch</span>
+          <h1>Request your free quote.</h1>
+          <p>Tell us about your flooring or interior renewal project. We will review the details and follow up with the next step.</p>
+        </div>
+      </section>
 
- <body class="imagen-fondo" style="background-image: url('./assets/img/fondo.jpg')">
- 
+      <section class="section" aria-labelledby="quote-heading">
+        <div class="container quote-layout">
+          <div>
+            <div class="section-heading">
+              <span class="eyebrow">Project Details</span>
+              <h2 id="quote-heading">Start with a few essentials.</h2>
+              <p>The more we know about the space, timing, and service you need, the better we can prepare a clear first response.</p>
+            </div>
 
+            <form class="quote-form" action="https://formspree.io/xbjogbzb" method="POST">
+              <div class="form-row">
+                <div class="field">
+                  <label for="contact-name">Name</label>
+                  <input id="contact-name" name="name" type="text" autocomplete="name" placeholder="Your name" required>
+                </div>
+                <div class="field">
+                  <label for="contact-email">Email</label>
+                  <input id="contact-email" name="email" type="email" autocomplete="email" placeholder="Your email" required>
+                </div>
+              </div>
 
+              <div class="form-row">
+                <div class="field">
+                  <label for="contact-phone">Phone</label>
+                  <input id="contact-phone" name="phone" type="tel" autocomplete="tel" placeholder="Phone (optional)">
+                </div>
+                <div class="field">
+                  <label for="contact-service">Service of interest</label>
+                  <select id="contact-service" name="service" required>
+                    <option value="">Select a service</option>
+                    <option value="Floor Installation">Floor Installation</option>
+                    <option value="Interior Renewal">Interior Renewal</option>
+                    <option value="Both">Both</option>
+                    <option value="Something Else">Something else</option>
+                  </select>
+                </div>
+              </div>
 
+              <div class="field">
+                <label for="contact-message">Project message</label>
+                <textarea id="contact-message" name="message" placeholder="Tell us about your project" required></textarea>
+              </div>
 
-<ul class="sidenav">
-  <li><a href="./index.html">HOME</a></li>
-  <li><a href="./flooring.html">FLOOR INSTALLATION</a></li>
-  <li><a href="./interior-renewal.html">INTERIOR RENEWAL</a></li>
-  <li><a href="./contact.html">CONTACT US</a></li>
-  <li class="push"><a href="./about.html">ABOUT US</a></li>
-</ul>  
+              <button class="btn btn-primary" type="submit">Send Request <span aria-hidden="true">&rarr;</span></button>
+            </form>
+          </div>
 
+          <aside class="contact-panel" aria-labelledby="contact-details-heading">
+            <span class="eyebrow">Contact Details</span>
+            <h2 id="contact-details-heading" style="font-family: 'Cormorant Garamond', Georgia, serif; font-size: 42px; line-height: 1; margin: 0 0 24px;">Serving South Florida.</h2>
+            <ul class="contact-list">
+              <li>
+                <span>Location</span>
+                <strong>Miami, Florida</strong>
+              </li>
+              <li>
+                <span>Service Area</span>
+                <strong>All of South Florida</strong>
+              </li>
+              <li>
+                <span>Scheduling</span>
+                <strong>Project consultations by appointment</strong>
+              </li>
+              <li>
+                <span>Response</span>
+                <strong>Quote requests reviewed through this form</strong>
+              </li>
+            </ul>
+          </aside>
+        </div>
+      </section>
+    </main>
 
-<div class="content">
+    <footer class="site-footer">
+      <div class="container footer-main">
+        <div>
+          <a class="brand" href="./index.html" aria-label="CPM Installer Services home">
+            <span class="brand-main">CPM</span>
+            <span class="brand-sub">Installer Services</span>
+          </a>
+          <p>Premium flooring and interior renewal for South Florida homes and businesses.</p>
+        </div>
+        <div>
+          <h3>Explore</h3>
+          <ul class="footer-links">
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./gallery.html">Gallery</a></li>
+            <li><a href="./about.html">About</a></li>
+            <li><a href="./contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3>Services</h3>
+          <ul class="footer-links">
+            <li><a href="./flooring.html">Floor Installation</a></li>
+            <li><a href="./interior-renewal.html">Interior Renewal</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3>Contact</h3>
+          <ul class="footer-contact">
+            <li>Miami, Florida</li>
+            <li>Serving South Florida</li>
+            <li><a href="./contact.html">Request a free quote</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="container footer-bottom">
+        <span>&copy; 2026 CPM Installer Services. All rights reserved.</span>
+        <span>Fully licensed &amp; insured</span>
+      </div>
+    </footer>
+  </div>
 
-<h1>Contact us for a Free quote</h1>
-<form action="https://formspree.io/xbjogbzb" method="POST">
-  <input name="name" placeholder="What is your name?" class="name" required />
-  <input name="emailaddress" placeholder="What is your email?" class="email" type="email" required />
-  <textarea rows="4" cols="50" name="subject" placeholder="Please enter your message" class="message" required></textarea>
-  <input name="submit" class="btn" type="submit" value="Send" /><input class="btn" type="reset" value="Reset">
-</form>
-</div>
-
-
+  <script src="./assets/js/js2.js"></script>
 </body>
-
 </html>
