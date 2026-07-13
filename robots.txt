@@ -1,0 +1,5 @@
+# Public sitemap for CPM Installer Services.
+User-agent: *
+Allow: /
+
+Sitemap: https://cpm-installer-services.netlify.app/sitemap.xml
