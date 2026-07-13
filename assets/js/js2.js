@@ -11,8 +11,10 @@ document.addEventListener("DOMContentLoaded", function () {
 
     if ((currentPage === "" || currentPage === "index.html") && linkPage === "index.html") {
       link.classList.add("active");
+      link.setAttribute("aria-current", "page");
     } else if (linkPage === currentPage) {
       link.classList.add("active");
+      link.setAttribute("aria-current", "page");
     }
   });
 
