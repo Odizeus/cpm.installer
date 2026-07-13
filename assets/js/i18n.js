@@ -230,6 +230,7 @@
       "contact.submit": "Enviar solicitud",
       "contact.panelEyebrow": "Información de contacto",
       "contact.panelTitle": "Al servicio del sur de Florida.",
+      "contact.panelIntro": "Cuéntenos qué necesita y revisaremos su solicitud.",
       "contact.location": "Ubicación",
       "contact.serviceArea": "Área de servicio",
       "contact.serviceAreaValue": "Todo el sur de Florida",
