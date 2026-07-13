@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Request a free flooring or interior renewal quote from CPM Installer Services.">
-  <title>Contact | CPM Installer Services</title>
+  <meta name="description" content="Request a free flooring or interior renewal quote from CPM Installer Services." data-i18n-content="contact.description">
+  <title data-i18n="contact.title">Contact | CPM Installer Services</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="stylesheet" href="./assets/css/style1.css">
@@ -17,18 +17,25 @@
           <span class="brand-main">CPM</span>
           <span class="brand-sub">Installer Services</span>
         </a>
-        <nav class="main-nav" id="siteNav" aria-label="Primary navigation">
-          <a href="./index.html">Home</a>
-          <a href="./flooring.html">Floor Installation</a>
-          <a href="./interior-renewal.html">Interior Renewal</a>
-          <a href="./gallery.html">Gallery</a>
-          <a href="./about.html">About</a>
+        <nav class="main-nav" id="siteNav" aria-label="Primary navigation" data-i18n-aria-label="nav.primary">
+          <a href="./index.html" data-i18n="nav.home">Home</a>
+          <a href="./flooring.html" data-i18n="nav.flooring">Floor Installation</a>
+          <a href="./interior-renewal.html" data-i18n="nav.interior">Interior Renewal</a>
+          <a href="./gallery.html" data-i18n="nav.gallery">Gallery</a>
+          <a href="./about.html" data-i18n="nav.about">About</a>
+          <div class="language-switcher mobile-language" role="group" aria-label="Language options" data-i18n-aria-label="nav.language">
+            <button class="language-option" type="button" data-language="en" aria-pressed="true">EN</button>
+            <button class="language-option" type="button" data-language="es" aria-pressed="false">ES</button>
+          </div>
         </nav>
         <div class="header-actions">
-          <span class="language-pill" aria-label="Language options">EN / ES</span>
-          <a class="btn btn-primary" href="./contact.html" aria-current="page">Request a Quote</a>
+          <div class="language-pill language-switcher" role="group" aria-label="Language options" data-i18n-aria-label="nav.language">
+            <button class="language-option" type="button" data-language="en" aria-pressed="true">EN</button>
+            <button class="language-option" type="button" data-language="es" aria-pressed="false">ES</button>
+          </div>
+          <a class="btn btn-primary" href="./contact.html" aria-current="page" data-i18n="nav.requestQuote">Request a Quote</a>
         </div>
-        <button class="nav-toggle" id="navToggle" type="button" aria-label="Toggle navigation" aria-expanded="false" aria-controls="siteNav">
+        <button class="nav-toggle" id="navToggle" type="button" aria-label="Toggle navigation" data-i18n-aria-label="nav.toggle" aria-expanded="false" aria-controls="siteNav">
           <span class="nav-toggle-lines" aria-hidden="true"><span></span><span></span><span></span></span>
         </button>
       </div>
@@ -37,9 +44,9 @@
     <main>
       <section class="page-hero" style="--page-hero-image: url('./assets/img/fondo-madera.jpg');">
         <div class="container">
-          <span class="eyebrow">Get in Touch</span>
-          <h1>Request your free quote.</h1>
-          <p>Tell us about your flooring or interior renewal project. We will review the details and follow up with the next step.</p>
+          <span class="eyebrow" data-i18n="contact.eyebrow">Get in Touch</span>
+          <h1 data-i18n="contact.heroTitle">Request your free quote.</h1>
+          <p data-i18n="contact.lead">Tell us about your flooring or interior renewal project. We will review the details and follow up with the next step.</p>
         </div>
       </section>
 
@@ -47,68 +54,72 @@
         <div class="container quote-layout">
           <div>
             <div class="section-heading">
-              <span class="eyebrow">Project Details</span>
-              <h2 id="quote-heading">Start with a few essentials.</h2>
-              <p>The more we know about the space, timing, and service you need, the better we can prepare a clear first response.</p>
+              <span class="eyebrow" data-i18n="contact.detailsEyebrow">Project Details</span>
+              <h2 id="quote-heading" data-i18n="contact.detailsTitle">Start with a few essentials.</h2>
+              <p data-i18n="contact.detailsText">The more we know about the space, timing, and service you need, the better we can prepare a clear first response.</p>
             </div>
 
-            <form class="quote-form" action="https://formspree.io/xbjogbzb" method="POST">
+            <form class="quote-form" name="quote-request" method="POST" action="./thank-you.html" data-netlify="true" data-netlify-honeypot="bot-field">
+              <input type="hidden" name="form-name" value="quote-request">
+              <p class="visually-hidden" aria-hidden="true">
+                <label><span data-i18n="contact.honeypot">Do not fill out this field if you are human.</span><input name="bot-field" tabindex="-1" autocomplete="off"></label>
+              </p>
               <div class="form-row">
                 <div class="field">
-                  <label for="contact-name">Name</label>
-                  <input id="contact-name" name="name" type="text" autocomplete="name" placeholder="Your name" required>
+                  <label for="contact-name" data-i18n="contact.name">Name</label>
+                  <input id="contact-name" name="name" type="text" autocomplete="name" placeholder="Your name" data-i18n-placeholder="contact.namePlaceholder" required>
                 </div>
                 <div class="field">
-                  <label for="contact-email">Email</label>
-                  <input id="contact-email" name="email" type="email" autocomplete="email" placeholder="Your email" required>
+                  <label for="contact-email" data-i18n="contact.email">Email</label>
+                  <input id="contact-email" name="email" type="email" autocomplete="email" placeholder="Your email" data-i18n-placeholder="contact.emailPlaceholder" required>
                 </div>
               </div>
 
               <div class="form-row">
                 <div class="field">
-                  <label for="contact-phone">Phone</label>
-                  <input id="contact-phone" name="phone" type="tel" autocomplete="tel" placeholder="Phone (optional)">
+                  <label for="contact-phone" data-i18n="contact.phone">Phone</label>
+                  <input id="contact-phone" name="phone" type="tel" autocomplete="tel" placeholder="Phone (optional)" data-i18n-placeholder="contact.phonePlaceholder">
                 </div>
                 <div class="field">
-                  <label for="contact-service">Service of interest</label>
+                  <label for="contact-service" data-i18n="contact.service">Service of interest</label>
                   <select id="contact-service" name="service" required>
-                    <option value="">Select a service</option>
-                    <option value="Floor Installation">Floor Installation</option>
-                    <option value="Interior Renewal">Interior Renewal</option>
-                    <option value="Both">Both</option>
-                    <option value="Something Else">Something else</option>
+                    <option value="" data-i18n="contact.selectService">Select a service</option>
+                    <option value="Floor Installation" data-i18n="contact.flooring">Floor Installation</option>
+                    <option value="Interior Renewal" data-i18n="contact.interior">Interior Renewal</option>
+                    <option value="Both" data-i18n="contact.both">Both</option>
+                    <option value="Something Else" data-i18n="contact.other">Something else</option>
                   </select>
                 </div>
               </div>
 
               <div class="field">
-                <label for="contact-message">Project message</label>
-                <textarea id="contact-message" name="message" placeholder="Tell us about your project" required></textarea>
+                <label for="contact-message" data-i18n="contact.message">Project message</label>
+                <textarea id="contact-message" name="message" placeholder="Tell us about your project" data-i18n-placeholder="contact.messagePlaceholder" required></textarea>
               </div>
 
-              <button class="btn btn-primary" type="submit">Send Request <span aria-hidden="true">&rarr;</span></button>
+              <button class="btn btn-primary" type="submit"><span data-i18n="contact.submit">Send Request</span> <span aria-hidden="true">&rarr;</span></button>
             </form>
           </div>
 
           <aside class="contact-panel" aria-labelledby="contact-details-heading">
-            <span class="eyebrow">Contact Details</span>
-            <h2 id="contact-details-heading" style="font-family: 'Cormorant Garamond', Georgia, serif; font-size: 42px; line-height: 1; margin: 0 0 24px;">Serving South Florida.</h2>
+            <span class="eyebrow" data-i18n="contact.panelEyebrow">Contact Details</span>
+            <h2 id="contact-details-heading" data-i18n="contact.panelTitle" style="font-family: 'Cormorant Garamond', Georgia, serif; font-size: 42px; line-height: 1; margin: 0 0 24px;">Serving South Florida.</h2>
             <ul class="contact-list">
               <li>
-                <span>Location</span>
+                <span data-i18n="contact.location">Location</span>
                 <strong>Miami, Florida</strong>
               </li>
               <li>
-                <span>Service Area</span>
-                <strong>All of South Florida</strong>
+                <span data-i18n="contact.serviceArea">Service Area</span>
+                <strong data-i18n="contact.serviceAreaValue">All of South Florida</strong>
               </li>
               <li>
-                <span>Scheduling</span>
-                <strong>Project consultations by appointment</strong>
+                <span data-i18n="contact.scheduling">Scheduling</span>
+                <strong data-i18n="contact.scheduleValue">Project consultations by appointment</strong>
               </li>
               <li>
-                <span>Response</span>
-                <strong>Quote requests reviewed through this form</strong>
+                <span data-i18n="contact.response">Response</span>
+                <strong data-i18n="contact.responseValue">Quote requests reviewed through this form</strong>
               </li>
             </ul>
           </aside>
@@ -123,40 +134,41 @@
             <span class="brand-main">CPM</span>
             <span class="brand-sub">Installer Services</span>
           </a>
-          <p>Premium flooring and interior renewal for South Florida homes and businesses.</p>
+          <p data-i18n="footer.tagline">Premium flooring and interior renewal for South Florida homes and businesses.</p>
         </div>
         <div>
-          <h3>Explore</h3>
+          <h3 data-i18n="footer.explore">Explore</h3>
           <ul class="footer-links">
-            <li><a href="./index.html">Home</a></li>
-            <li><a href="./gallery.html">Gallery</a></li>
-            <li><a href="./about.html">About</a></li>
-            <li><a href="./contact.html">Contact</a></li>
+            <li><a href="./index.html" data-i18n="nav.home">Home</a></li>
+            <li><a href="./gallery.html" data-i18n="nav.gallery">Gallery</a></li>
+            <li><a href="./about.html" data-i18n="nav.about">About</a></li>
+            <li><a href="./contact.html" data-i18n="footer.contact">Contact</a></li>
           </ul>
         </div>
         <div>
-          <h3>Services</h3>
+          <h3 data-i18n="footer.services">Services</h3>
           <ul class="footer-links">
-            <li><a href="./flooring.html">Floor Installation</a></li>
-            <li><a href="./interior-renewal.html">Interior Renewal</a></li>
+            <li><a href="./flooring.html" data-i18n="nav.flooring">Floor Installation</a></li>
+            <li><a href="./interior-renewal.html" data-i18n="nav.interior">Interior Renewal</a></li>
           </ul>
         </div>
         <div>
-          <h3>Contact</h3>
+          <h3 data-i18n="footer.contact">Contact</h3>
           <ul class="footer-contact">
             <li>Miami, Florida</li>
-            <li>Serving South Florida</li>
-            <li><a href="./contact.html">Request a free quote</a></li>
+            <li data-i18n="footer.serving">Serving South Florida</li>
+            <li><a href="./contact.html" data-i18n="footer.requestFreeQuote">Request a free quote</a></li>
           </ul>
         </div>
       </div>
       <div class="container footer-bottom">
-        <span>&copy; 2026 CPM Installer Services. All rights reserved.</span>
-        <span>Fully licensed &amp; insured</span>
+        <span data-i18n="footer.copyright">&copy; 2026 CPM Installer Services. All rights reserved.</span>
+        <span data-i18n="footer.licensed">Fully licensed &amp; insured</span>
       </div>
     </footer>
   </div>
 
   <script src="./assets/js/js2.js"></script>
+  <script src="./assets/js/i18n.js"></script>
 </body>
 </html>

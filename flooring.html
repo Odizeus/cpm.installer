@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Professional floor installation by CPM Installer Services across South Florida.">
-  <title>Floor Installation | CPM Installer Services</title>
+  <meta name="description" content="Professional floor installation by CPM Installer Services across South Florida." data-i18n-content="flooring.description">
+  <title data-i18n="flooring.title">Floor Installation | CPM Installer Services</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="stylesheet" href="./assets/css/style1.css">
@@ -17,18 +17,25 @@
           <span class="brand-main">CPM</span>
           <span class="brand-sub">Installer Services</span>
         </a>
-        <nav class="main-nav" id="siteNav" aria-label="Primary navigation">
-          <a href="./index.html">Home</a>
-          <a href="./flooring.html">Floor Installation</a>
-          <a href="./interior-renewal.html">Interior Renewal</a>
-          <a href="./gallery.html">Gallery</a>
-          <a href="./about.html">About</a>
+        <nav class="main-nav" id="siteNav" aria-label="Primary navigation" data-i18n-aria-label="nav.primary">
+          <a href="./index.html" data-i18n="nav.home">Home</a>
+          <a href="./flooring.html" data-i18n="nav.flooring">Floor Installation</a>
+          <a href="./interior-renewal.html" data-i18n="nav.interior">Interior Renewal</a>
+          <a href="./gallery.html" data-i18n="nav.gallery">Gallery</a>
+          <a href="./about.html" data-i18n="nav.about">About</a>
+          <div class="language-switcher mobile-language" role="group" aria-label="Language options" data-i18n-aria-label="nav.language">
+            <button class="language-option" type="button" data-language="en" aria-pressed="true">EN</button>
+            <button class="language-option" type="button" data-language="es" aria-pressed="false">ES</button>
+          </div>
         </nav>
         <div class="header-actions">
-          <span class="language-pill" aria-label="Language options">EN / ES</span>
-          <a class="btn btn-primary" href="./contact.html">Request a Quote</a>
+          <div class="language-pill language-switcher" role="group" aria-label="Language options" data-i18n-aria-label="nav.language">
+            <button class="language-option" type="button" data-language="en" aria-pressed="true">EN</button>
+            <button class="language-option" type="button" data-language="es" aria-pressed="false">ES</button>
+          </div>
+          <a class="btn btn-primary" href="./contact.html" data-i18n="nav.requestQuote">Request a Quote</a>
         </div>
-        <button class="nav-toggle" id="navToggle" type="button" aria-label="Toggle navigation" aria-expanded="false" aria-controls="siteNav">
+        <button class="nav-toggle" id="navToggle" type="button" aria-label="Toggle navigation" data-i18n-aria-label="nav.toggle" aria-expanded="false" aria-controls="siteNav">
           <span class="nav-toggle-lines" aria-hidden="true"><span></span><span></span><span></span></span>
         </button>
       </div>
@@ -37,12 +44,12 @@
     <main>
       <section class="page-hero" style="--page-hero-image: url('./assets/img/floor(1).jpg');">
         <div class="container">
-          <span class="eyebrow">Floor Installation</span>
-          <h1>Floors that ground a room in quality.</h1>
-          <p>We install hardwood, engineered wood, tile, luxury vinyl, carpet, and natural stone for residential and business spaces that need a clean, durable, refined finish.</p>
+          <span class="eyebrow" data-i18n="flooring.eyebrow">Floor Installation</span>
+          <h1 data-i18n="flooring.heroTitle">Floors that ground a room in quality.</h1>
+          <p data-i18n="flooring.lead">We install hardwood, engineered wood, tile, luxury vinyl, surface finishes, and natural stone for residential and business spaces that need a clean, durable, refined finish.</p>
           <div class="hero-actions">
-            <a class="btn btn-primary" href="./contact.html">Request a Free Quote <span aria-hidden="true">&rarr;</span></a>
-            <a class="btn btn-secondary" href="./gallery.html">View Flooring Work</a>
+            <a class="btn btn-primary" href="./contact.html"><span data-i18n="home.requestFreeQuote">Request a Free Quote</span> <span aria-hidden="true">&rarr;</span></a>
+            <a class="btn btn-secondary" href="./gallery.html" data-i18n="flooring.viewWork">View Flooring Work</a>
           </div>
         </div>
       </section>
@@ -50,49 +57,49 @@
       <section class="section" aria-labelledby="flooring-overview-heading">
         <div class="container split">
           <div class="split-copy">
-            <span class="eyebrow">Built from the ground up</span>
-            <h2 id="flooring-overview-heading">Every line, edge, and transition matters.</h2>
-            <p>Flooring installers use a variety of materials to create new floors in homes and businesses. CPM focuses on the details that make those materials feel intentional: level preparation, consistent layout, clean trims, and smooth transitions.</p>
-            <p>The result is a floor that elevates the room and performs day after day.</p>
+            <span class="eyebrow" data-i18n="flooring.overviewEyebrow">Built from the ground up</span>
+            <h2 id="flooring-overview-heading" data-i18n="flooring.overviewTitle">Every line, edge, and transition matters.</h2>
+            <p data-i18n="flooring.overviewText1">Flooring installers use a variety of materials to create new floors in homes and businesses. CPM focuses on the details that make those materials feel intentional: level preparation, consistent layout, clean trims, and smooth transitions.</p>
+            <p data-i18n="flooring.overviewText2">The result is a floor that elevates the room and performs day after day.</p>
           </div>
           <div class="detail-card">
-            <h3>Materials We Install</h3>
+            <h3 data-i18n="flooring.materialsTitle">Materials We Install</h3>
             <ul class="list-grid material-grid">
               <li class="material-card">
                 <img src="./assets/img/floor(4).jpg" alt="Warm wood flooring detail" loading="lazy">
-                <span>Hardwood</span>
+                <span data-i18n="flooring.hardwood">Hardwood</span>
               </li>
               <li class="material-card">
                 <img src="./assets/img/interior(20).jpg" alt="Completed kitchen with engineered wood flooring" loading="lazy">
-                <span>Engineered Wood</span>
+                <span data-i18n="flooring.engineeredWood">Engineered Wood</span>
               </li>
               <li class="material-card">
                 <img src="./assets/img/floor(14).jpg" alt="Porcelain tile installation detail" loading="lazy">
-                <span>Porcelain Tile</span>
+                <span data-i18n="flooring.porcelain">Porcelain Tile</span>
               </li>
               <li class="material-card">
                 <img src="./assets/img/interior(21).jpg" alt="Graphic ceramic tile finish" loading="lazy">
-                <span>Ceramic Tile</span>
+                <span data-i18n="flooring.ceramic">Ceramic Tile</span>
               </li>
               <li class="material-card">
                 <img src="./assets/img/floor(3).jpg" alt="Luxury vinyl plank flooring detail" loading="lazy">
-                <span>Luxury Vinyl</span>
+                <span data-i18n="flooring.vinyl">Luxury Vinyl</span>
               </li>
               <li class="material-card">
                 <img src="./assets/img/floor(2).jpg" alt="Neutral finished flooring surface" loading="lazy">
-                <span>Fine Carpet</span>
+                <span data-i18n="flooring.surfaceFinishes">Surface Finishes</span>
               </li>
               <li class="material-card">
                 <img src="./assets/img/floor(10).jpg" alt="Natural stone floor finish" loading="lazy">
-                <span>Natural Stone</span>
+                <span data-i18n="flooring.stone">Natural Stone</span>
               </li>
               <li class="material-card">
                 <img src="./assets/img/interior(15).jpg" alt="Wood staircase and trim detail" loading="lazy">
-                <span>Baseboards</span>
+                <span data-i18n="flooring.baseboards">Baseboards</span>
               </li>
               <li class="material-card">
                 <img src="./assets/img/floor(3).jpg" alt="Floor transition detail" loading="lazy">
-                <span>Transitions</span>
+                <span data-i18n="flooring.transitions">Transitions</span>
               </li>
             </ul>
           </div>
@@ -102,21 +109,21 @@
       <section class="section section-alt" aria-labelledby="flooring-process-heading">
         <div class="container">
           <div class="section-heading">
-            <span class="eyebrow">Installation Standard</span>
-            <h2 id="flooring-process-heading">A floor is only as good as its preparation.</h2>
+            <span class="eyebrow" data-i18n="flooring.processEyebrow">Installation Standard</span>
+            <h2 id="flooring-process-heading" data-i18n="flooring.processTitle">A floor is only as good as its preparation.</h2>
           </div>
           <div class="detail-grid">
             <article class="detail-card">
-              <h3>Surface Prep</h3>
-              <p>We check levels, clean substrate issues, and prepare the base before materials are installed.</p>
+              <h3 data-i18n="flooring.prep">Surface Prep</h3>
+              <p data-i18n="flooring.prepText">We check levels, clean substrate issues, and prepare the base before materials are installed.</p>
             </article>
             <article class="detail-card">
-              <h3>Layout Planning</h3>
-              <p>Pattern, direction, grout lines, transitions, and doorways are planned before the first cut.</p>
+              <h3 data-i18n="flooring.layout">Layout Planning</h3>
+              <p data-i18n="flooring.layoutText">Pattern, direction, grout lines, transitions, and doorways are planned before the first cut.</p>
             </article>
             <article class="detail-card">
-              <h3>Finished Walkthrough</h3>
-              <p>We review details with you and leave the project clean, complete, and ready to use.</p>
+              <h3 data-i18n="flooring.walkthrough">Finished Walkthrough</h3>
+              <p data-i18n="flooring.walkthroughText">We review details with you and leave the project clean, complete, and ready to use.</p>
             </article>
           </div>
         </div>
@@ -125,33 +132,33 @@
       <section class="section" aria-labelledby="installed-floors-heading">
         <div class="container">
           <div class="section-heading">
-            <span class="eyebrow">Installed Floors</span>
-            <h2 id="installed-floors-heading">Flooring projects from the archive.</h2>
+            <span class="eyebrow" data-i18n="flooring.archiveEyebrow">Installed Floors</span>
+            <h2 id="installed-floors-heading" data-i18n="flooring.archiveTitle">Flooring projects from the archive.</h2>
           </div>
           <div class="gallery-grid">
             <figure class="gallery-item wide">
               <img src="./assets/img/floor(1).jpg" alt="Installed flooring with warm wood tone">
-              <figcaption class="gallery-caption">Wood flooring installation</figcaption>
+              <figcaption class="gallery-caption" data-i18n="flooring.captionWood">Wood flooring installation</figcaption>
             </figure>
             <figure class="gallery-item">
               <img src="./assets/img/floor(2).jpg" alt="Finished floor installation detail">
-              <figcaption class="gallery-caption">Clean finish detail</figcaption>
+              <figcaption class="gallery-caption" data-i18n="flooring.captionFinish">Clean finish detail</figcaption>
             </figure>
             <figure class="gallery-item">
               <img src="./assets/img/floor(3).jpg" alt="Floor installation transition detail">
-              <figcaption class="gallery-caption">Transition work</figcaption>
+              <figcaption class="gallery-caption" data-i18n="flooring.captionTransition">Transition work</figcaption>
             </figure>
             <figure class="gallery-item">
               <img src="./assets/img/floor(4).jpg" alt="Installed flooring surface detail">
-              <figcaption class="gallery-caption">Surface detail</figcaption>
+              <figcaption class="gallery-caption" data-i18n="flooring.captionSurface">Surface detail</figcaption>
             </figure>
             <figure class="gallery-item wide">
               <img src="./assets/img/floor(14).jpg" alt="Detailed tile installation in spa-like room">
-              <figcaption class="gallery-caption">Tile craftsmanship</figcaption>
+              <figcaption class="gallery-caption" data-i18n="flooring.captionTile">Tile craftsmanship</figcaption>
             </figure>
             <figure class="gallery-item">
               <img src="./assets/img/exterior-pool-deck-surface-01.jpg" alt="Finished pool deck surface beside a swimming pool" loading="lazy">
-              <figcaption class="gallery-caption">Pool deck surface</figcaption>
+              <figcaption class="gallery-caption" data-i18n="flooring.captionPool">Pool deck surface</figcaption>
             </figure>
           </div>
         </div>
@@ -159,10 +166,10 @@
 
       <section class="cta-band" style="background-image: url('./assets/img/fondo-madera.jpg');" aria-labelledby="flooring-cta-heading">
         <div class="container">
-          <h2 id="flooring-cta-heading">Ready for a better foundation?</h2>
-          <p>Tell us about your flooring project and we will help you plan the next step.</p>
+          <h2 id="flooring-cta-heading" data-i18n="flooring.ctaTitle">Ready for a better foundation?</h2>
+          <p data-i18n="flooring.ctaText">Tell us about your flooring project and we will help you plan the next step.</p>
           <div class="hero-actions" style="justify-content: center;">
-            <a class="btn btn-primary" href="./contact.html">Request a Free Quote <span aria-hidden="true">&rarr;</span></a>
+            <a class="btn btn-primary" href="./contact.html"><span data-i18n="home.requestFreeQuote">Request a Free Quote</span> <span aria-hidden="true">&rarr;</span></a>
           </div>
         </div>
       </section>
@@ -175,40 +182,41 @@
             <span class="brand-main">CPM</span>
             <span class="brand-sub">Installer Services</span>
           </a>
-          <p>Premium flooring and interior renewal for South Florida homes and businesses.</p>
+          <p data-i18n="footer.tagline">Premium flooring and interior renewal for South Florida homes and businesses.</p>
         </div>
         <div>
-          <h3>Explore</h3>
+          <h3 data-i18n="footer.explore">Explore</h3>
           <ul class="footer-links">
-            <li><a href="./index.html">Home</a></li>
-            <li><a href="./gallery.html">Gallery</a></li>
-            <li><a href="./about.html">About</a></li>
-            <li><a href="./contact.html">Contact</a></li>
+            <li><a href="./index.html" data-i18n="nav.home">Home</a></li>
+            <li><a href="./gallery.html" data-i18n="nav.gallery">Gallery</a></li>
+            <li><a href="./about.html" data-i18n="nav.about">About</a></li>
+            <li><a href="./contact.html" data-i18n="footer.contact">Contact</a></li>
           </ul>
         </div>
         <div>
-          <h3>Services</h3>
+          <h3 data-i18n="footer.services">Services</h3>
           <ul class="footer-links">
-            <li><a href="./flooring.html">Floor Installation</a></li>
-            <li><a href="./interior-renewal.html">Interior Renewal</a></li>
+            <li><a href="./flooring.html" data-i18n="nav.flooring">Floor Installation</a></li>
+            <li><a href="./interior-renewal.html" data-i18n="nav.interior">Interior Renewal</a></li>
           </ul>
         </div>
         <div>
-          <h3>Contact</h3>
+          <h3 data-i18n="footer.contact">Contact</h3>
           <ul class="footer-contact">
             <li>Miami, Florida</li>
-            <li>Serving South Florida</li>
-            <li><a href="./contact.html">Request a free quote</a></li>
+            <li data-i18n="footer.serving">Serving South Florida</li>
+            <li><a href="./contact.html" data-i18n="footer.requestFreeQuote">Request a free quote</a></li>
           </ul>
         </div>
       </div>
       <div class="container footer-bottom">
-        <span>&copy; 2026 CPM Installer Services. All rights reserved.</span>
-        <span>Fully licensed &amp; insured</span>
+        <span data-i18n="footer.copyright">&copy; 2026 CPM Installer Services. All rights reserved.</span>
+        <span data-i18n="footer.licensed">Fully licensed &amp; insured</span>
       </div>
     </footer>
   </div>
 
   <script src="./assets/js/js2.js"></script>
+  <script src="./assets/js/i18n.js"></script>
 </body>
 </html>

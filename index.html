@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="CPM Installer Services provides premium flooring installation and interior renewal across South Florida.">
-  <title>CPM Installer Services | Flooring & Interior Renewal</title>
+  <meta name="description" content="CPM Installer Services provides premium flooring installation and interior renewal across South Florida." data-i18n-content="home.description">
+  <title data-i18n="home.title">CPM Installer Services | Flooring &amp; Interior Renewal</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="stylesheet" href="./assets/css/style1.css">
@@ -18,20 +18,27 @@
           <span class="brand-sub">Installer Services</span>
         </a>
 
-        <nav class="main-nav" id="siteNav" aria-label="Primary navigation">
-          <a href="./index.html">Home</a>
-          <a href="./flooring.html">Floor Installation</a>
-          <a href="./interior-renewal.html">Interior Renewal</a>
-          <a href="./gallery.html">Gallery</a>
-          <a href="./about.html">About</a>
+        <nav class="main-nav" id="siteNav" aria-label="Primary navigation" data-i18n-aria-label="nav.primary">
+          <a href="./index.html" data-i18n="nav.home">Home</a>
+          <a href="./flooring.html" data-i18n="nav.flooring">Floor Installation</a>
+          <a href="./interior-renewal.html" data-i18n="nav.interior">Interior Renewal</a>
+          <a href="./gallery.html" data-i18n="nav.gallery">Gallery</a>
+          <a href="./about.html" data-i18n="nav.about">About</a>
+          <div class="language-switcher mobile-language" role="group" aria-label="Language options" data-i18n-aria-label="nav.language">
+            <button class="language-option" type="button" data-language="en" aria-pressed="true">EN</button>
+            <button class="language-option" type="button" data-language="es" aria-pressed="false">ES</button>
+          </div>
         </nav>
 
         <div class="header-actions">
-          <span class="language-pill" aria-label="Language options">EN / ES</span>
-          <a class="btn btn-primary" href="./contact.html">Request a Quote</a>
+          <div class="language-pill language-switcher" role="group" aria-label="Language options" data-i18n-aria-label="nav.language">
+            <button class="language-option" type="button" data-language="en" aria-pressed="true">EN</button>
+            <button class="language-option" type="button" data-language="es" aria-pressed="false">ES</button>
+          </div>
+          <a class="btn btn-primary" href="./contact.html" data-i18n="nav.requestQuote">Request a Quote</a>
         </div>
 
-        <button class="nav-toggle" id="navToggle" type="button" aria-label="Toggle navigation" aria-expanded="false" aria-controls="siteNav">
+        <button class="nav-toggle" id="navToggle" type="button" aria-label="Toggle navigation" data-i18n-aria-label="nav.toggle" aria-expanded="false" aria-controls="siteNav">
           <span class="nav-toggle-lines" aria-hidden="true"><span></span><span></span><span></span></span>
         </button>
       </div>
@@ -41,60 +48,60 @@
       <section class="hero" style="background-image: url('./assets/img/fondo.jpg');">
         <div class="container">
           <div class="hero-content">
-            <span class="eyebrow">Family-owned &middot; South Florida &middot; Since 2017</span>
-            <h1>Craftsmanship that transforms the spaces you live in.</h1>
-            <p class="lead">CPM Installer Services delivers premium flooring installation and interior renewal for homes and businesses across South Florida, with careful planning, clean execution, and a finish built to last.</p>
+            <span class="eyebrow" data-i18n="home.eyebrow">Family-owned &middot; South Florida &middot; Since 2017</span>
+            <h1 data-i18n="home.heroTitle">Craftsmanship that transforms the spaces you live in.</h1>
+            <p class="lead" data-i18n="home.lead">CPM Installer Services delivers premium flooring installation and interior renewal for homes and businesses across South Florida, with careful planning, clean execution, and a finish built to last.</p>
             <div class="hero-actions">
-              <a class="btn btn-primary" href="./contact.html">Request a Free Quote <span aria-hidden="true">&rarr;</span></a>
-              <a class="btn btn-secondary" href="./gallery.html">View Our Work</a>
+              <a class="btn btn-primary" href="./contact.html"><span data-i18n="home.requestFreeQuote">Request a Free Quote</span> <span aria-hidden="true">&rarr;</span></a>
+              <a class="btn btn-secondary" href="./gallery.html" data-i18n="home.viewWork">View Our Work</a>
             </div>
           </div>
         </div>
       </section>
 
-      <section class="stats-strip" aria-label="Company highlights">
+      <section class="stats-strip" aria-label="Company highlights" data-i18n-aria-label="home.highlights">
         <div class="stat-item">
           <span class="stat-number">8+</span>
-          <span class="stat-label">Years of Craft</span>
+          <span class="stat-label" data-i18n="home.statsCraft">Years of Craft</span>
         </div>
         <div class="stat-item">
           <span class="stat-number">450+</span>
-          <span class="stat-label">Projects Delivered</span>
+          <span class="stat-label" data-i18n="home.statsProjects">Projects Delivered</span>
         </div>
         <div class="stat-item">
           <span class="stat-number">100%</span>
-          <span class="stat-label">Licensed &amp; Insured</span>
+          <span class="stat-label" data-i18n="home.statsLicensed">Licensed &amp; Insured</span>
         </div>
         <div class="stat-item">
           <span class="stat-number">5.0</span>
-          <span class="stat-label">Client-Focused Finish</span>
+          <span class="stat-label" data-i18n="home.statsClient">Client-Focused Finish</span>
         </div>
       </section>
 
       <section class="section" aria-labelledby="services-heading">
         <div class="container">
           <div class="section-heading">
-            <span class="eyebrow">What We Do</span>
-            <h2 id="services-heading">Two disciplines. One standard of excellence.</h2>
-            <p>From the ground up to the final detail, every project is handled with the care we would bring into our own home.</p>
+            <span class="eyebrow" data-i18n="home.servicesEyebrow">What We Do</span>
+            <h2 id="services-heading" data-i18n="home.servicesTitle">Two disciplines. One standard of excellence.</h2>
+            <p data-i18n="home.servicesText">From the ground up to the final detail, every project is handled with the care we would bring into our own home.</p>
           </div>
 
           <div class="services-grid">
             <a class="service-card" href="./flooring.html">
               <img src="./assets/img/floor(1).jpg" alt="Installed wood flooring detail">
               <div class="service-card-content">
-                <h3>Floor Installation</h3>
-                <p>Hardwood, engineered wood, tile, luxury vinyl, and fine carpet installed with precise transitions and durable finish quality.</p>
-                <span class="link-arrow">Explore &rarr;</span>
+                <h3 data-i18n="home.serviceFlooring">Floor Installation</h3>
+                <p data-i18n="home.serviceFlooringText">Hardwood, engineered wood, tile, luxury vinyl, and surface finishes installed with precise transitions and durable finish quality.</p>
+                <span class="link-arrow" data-i18n="home.explore">Explore &rarr;</span>
               </div>
             </a>
 
             <a class="service-card" href="./interior-renewal.html">
               <img src="./assets/img/interior(21).jpg" alt="Renewed bathroom tile and mirror detail">
               <div class="service-card-content">
-                <h3>Interior Renewal</h3>
-                <p>Thoughtful interior updates, bath refreshes, trims, finishes, and room transformations that make daily spaces feel new again.</p>
-                <span class="link-arrow">Explore &rarr;</span>
+                <h3 data-i18n="home.serviceInterior">Interior Renewal</h3>
+                <p data-i18n="home.serviceInteriorText">Thoughtful interior updates, bath refreshes, trims, finishes, and room transformations that make daily spaces feel new again.</p>
+                <span class="link-arrow" data-i18n="home.explore">Explore &rarr;</span>
               </div>
             </a>
           </div>
@@ -107,16 +114,16 @@
             <img src="./assets/img/interior(18).jpg" alt="Finished bright bathroom renewal">
             <div class="story-badge">
               <strong>2017</strong>
-              <span>Established</span>
+              <span data-i18n="home.established">Established</span>
             </div>
           </div>
           <div class="split-copy">
-            <span class="eyebrow">Our Story</span>
-            <h2 id="story-heading">A family business built on trust and finish quality.</h2>
-            <p>CPM Installer Services is a family-owned company established in October 2017 in Florida. The work has grown through reputation: clear communication, careful scheduling, and results that hold up after the walkthrough.</p>
-            <p>We are fully licensed and insured, and we stay committed to excellence from the first conversation through project completion.</p>
+            <span class="eyebrow" data-i18n="home.storyEyebrow">Our Story</span>
+            <h2 id="story-heading" data-i18n="home.storyTitle">A family business built on trust and finish quality.</h2>
+            <p data-i18n="home.storyText1">CPM Installer Services is a family-owned company established in October 2017 in Florida. The work has grown through reputation: clear communication, careful scheduling, and results that hold up after the walkthrough.</p>
+            <p data-i18n="home.storyText2">We are fully licensed and insured, and we stay committed to excellence from the first conversation through project completion.</p>
             <div class="section-actions">
-              <a class="link-arrow" href="./about.html">Meet the Family &rarr;</a>
+              <a class="link-arrow" href="./about.html" data-i18n="home.meetFamily">Meet the Family &rarr;</a>
             </div>
           </div>
         </div>
@@ -125,30 +132,30 @@
       <section class="section" aria-labelledby="process-heading">
         <div class="container">
           <div class="section-heading">
-            <span class="eyebrow">How We Work</span>
-            <h2 id="process-heading">A meticulous process, from vision to reveal.</h2>
+            <span class="eyebrow" data-i18n="home.processEyebrow">How We Work</span>
+            <h2 id="process-heading" data-i18n="home.processTitle">A meticulous process, from vision to reveal.</h2>
           </div>
 
           <div class="process-grid">
             <article class="process-card">
               <span class="process-number">01</span>
-              <h3>Consultation</h3>
-              <p>We listen, measure, and understand how the space needs to look, feel, and function.</p>
+              <h3 data-i18n="home.consultation">Consultation</h3>
+              <p data-i18n="home.consultationText">We listen, measure, and understand how the space needs to look, feel, and function.</p>
             </article>
             <article class="process-card">
               <span class="process-number">02</span>
-              <h3>Design &amp; Quote</h3>
-              <p>You receive a clear proposal, practical options, and expectations before work begins.</p>
+              <h3 data-i18n="home.designQuote">Design &amp; Quote</h3>
+              <p data-i18n="home.designQuoteText">You receive a clear proposal, practical options, and expectations before work begins.</p>
             </article>
             <article class="process-card">
               <span class="process-number">03</span>
-              <h3>Craftsmanship</h3>
-              <p>Premium materials and skilled hands come together with close attention to every detail.</p>
+              <h3 data-i18n="home.craftsmanship">Craftsmanship</h3>
+              <p data-i18n="home.craftsmanshipText">Premium materials and skilled hands come together with close attention to every detail.</p>
             </article>
             <article class="process-card">
               <span class="process-number">04</span>
-              <h3>Final Reveal</h3>
-              <p>We finish with a clean walkthrough and a space delivered with care.</p>
+              <h3 data-i18n="home.finalReveal">Final Reveal</h3>
+              <p data-i18n="home.finalRevealText">We finish with a clean walkthrough and a space delivered with care.</p>
             </article>
           </div>
         </div>
@@ -157,10 +164,10 @@
       <section class="section section-alt" aria-labelledby="selected-work-heading">
         <div class="container">
           <div class="section-heading">
-            <span class="eyebrow">Selected Work</span>
-            <h2 id="selected-work-heading">Recent projects from our archive.</h2>
+            <span class="eyebrow" data-i18n="home.workEyebrow">Selected Work</span>
+            <h2 id="selected-work-heading" data-i18n="home.workTitle">Recent projects from our archive.</h2>
             <div class="section-actions">
-              <a class="link-arrow" href="./gallery.html">See the Full Gallery &rarr;</a>
+              <a class="link-arrow" href="./gallery.html" data-i18n="home.seeGallery">See the Full Gallery &rarr;</a>
             </div>
           </div>
 
@@ -187,29 +194,29 @@
       <section class="section" aria-labelledby="testimonials-heading">
         <div class="container">
           <div class="section-heading">
-            <span class="eyebrow">Client Voices</span>
-            <h2 id="testimonials-heading">The finish speaks. So do our clients.</h2>
+            <span class="eyebrow" data-i18n="home.clientsEyebrow">Client Voices</span>
+            <h2 id="testimonials-heading" data-i18n="home.clientsTitle">The finish speaks. So do our clients.</h2>
           </div>
 
           <div class="testimonials-grid">
             <article class="testimonial-card">
-              <blockquote>CPM handled our flooring with patience and precision. The transitions are clean, the work area stayed organized, and the result changed the whole home.</blockquote>
+              <blockquote data-i18n="home.testimonial1">CPM handled our flooring with patience and precision. The transitions are clean, the work area stayed organized, and the result changed the whole home.</blockquote>
               <footer>
-                <strong>Residential Client</strong>
+                <strong data-i18n="home.testimonial1Role">Residential Client</strong>
                 <span>Miami, FL</span>
               </footer>
             </article>
             <article class="testimonial-card">
-              <blockquote>The interior refresh was completed on schedule and the final walkthrough was spotless. It felt like a brand new room without the stress.</blockquote>
+              <blockquote data-i18n="home.testimonial2">The interior refresh was completed on schedule and the final walkthrough was spotless. It felt like a brand new room without the stress.</blockquote>
               <footer>
-                <strong>Interior Renewal Client</strong>
+                <strong data-i18n="home.testimonial2Role">Interior Renewal Client</strong>
                 <span>South Florida</span>
               </footer>
             </article>
             <article class="testimonial-card">
-              <blockquote>Honest quote, steady communication, and craftsmanship you can feel underfoot. We would call them again for the next phase.</blockquote>
+              <blockquote data-i18n="home.testimonial3">Honest quote, steady communication, and craftsmanship you can feel underfoot. We would call them again for the next phase.</blockquote>
               <footer>
-                <strong>Repeat Customer</strong>
+                <strong data-i18n="home.testimonial3Role">Repeat Customer</strong>
                 <span>Florida</span>
               </footer>
             </article>
@@ -219,10 +226,10 @@
 
       <section class="cta-band" style="background-image: url('./assets/img/fondo-madera.jpg');" aria-labelledby="cta-heading">
         <div class="container">
-          <h2 id="cta-heading">Ready to renew your space?</h2>
-          <p>Tell us about your project and receive a free, no-obligation quote.</p>
+          <h2 id="cta-heading" data-i18n="home.ctaTitle">Ready to renew your space?</h2>
+          <p data-i18n="home.ctaText">Tell us about your project and receive a free, no-obligation quote.</p>
           <div class="hero-actions" style="justify-content: center;">
-            <a class="btn btn-primary" href="./contact.html">Request a Free Quote <span aria-hidden="true">&rarr;</span></a>
+            <a class="btn btn-primary" href="./contact.html"><span data-i18n="home.requestFreeQuote">Request a Free Quote</span> <span aria-hidden="true">&rarr;</span></a>
           </div>
         </div>
       </section>
@@ -235,40 +242,41 @@
             <span class="brand-main">CPM</span>
             <span class="brand-sub">Installer Services</span>
           </a>
-          <p>Premium flooring and interior renewal for South Florida homes and businesses.</p>
+          <p data-i18n="footer.tagline">Premium flooring and interior renewal for South Florida homes and businesses.</p>
         </div>
         <div>
-          <h3>Explore</h3>
+          <h3 data-i18n="footer.explore">Explore</h3>
           <ul class="footer-links">
-            <li><a href="./index.html">Home</a></li>
-            <li><a href="./gallery.html">Gallery</a></li>
-            <li><a href="./about.html">About</a></li>
-            <li><a href="./contact.html">Contact</a></li>
+            <li><a href="./index.html" data-i18n="nav.home">Home</a></li>
+            <li><a href="./gallery.html" data-i18n="nav.gallery">Gallery</a></li>
+            <li><a href="./about.html" data-i18n="nav.about">About</a></li>
+            <li><a href="./contact.html" data-i18n="footer.contact">Contact</a></li>
           </ul>
         </div>
         <div>
-          <h3>Services</h3>
+          <h3 data-i18n="footer.services">Services</h3>
           <ul class="footer-links">
-            <li><a href="./flooring.html">Floor Installation</a></li>
-            <li><a href="./interior-renewal.html">Interior Renewal</a></li>
+            <li><a href="./flooring.html" data-i18n="nav.flooring">Floor Installation</a></li>
+            <li><a href="./interior-renewal.html" data-i18n="nav.interior">Interior Renewal</a></li>
           </ul>
         </div>
         <div>
-          <h3>Contact</h3>
+          <h3 data-i18n="footer.contact">Contact</h3>
           <ul class="footer-contact">
             <li>Miami, Florida</li>
-            <li>Serving South Florida</li>
-            <li><a href="./contact.html">Request a free quote</a></li>
+            <li data-i18n="footer.serving">Serving South Florida</li>
+            <li><a href="./contact.html" data-i18n="footer.requestFreeQuote">Request a free quote</a></li>
           </ul>
         </div>
       </div>
       <div class="container footer-bottom">
-        <span>&copy; 2026 CPM Installer Services. All rights reserved.</span>
-        <span>Fully licensed &amp; insured</span>
+        <span data-i18n="footer.copyright">&copy; 2026 CPM Installer Services. All rights reserved.</span>
+        <span data-i18n="footer.licensed">Fully licensed &amp; insured</span>
       </div>
     </footer>
   </div>
 
   <script src="./assets/js/js2.js"></script>
+  <script src="./assets/js/i18n.js"></script>
 </body>
 </html>
