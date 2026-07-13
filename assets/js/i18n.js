@@ -218,7 +218,7 @@
       "contact.email": "Correo electrónico",
       "contact.emailPlaceholder": "Su correo electrónico",
       "contact.phone": "Teléfono",
-      "contact.phonePlaceholder": "Teléfono (opcional)",
+      "contact.phonePlaceholder": "Su número de teléfono",
       "contact.service": "Servicio de interés",
       "contact.selectService": "Seleccione un servicio",
       "contact.flooring": "Instalación de pisos",
